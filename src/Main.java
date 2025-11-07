@@ -36,7 +36,7 @@ public class Main {
                                     "2. Insertar un elemento al final\n"+ //TODO @ Mia Renee Valenzuela Yescaz
                                     "3. Insertar un elemento en orden\n"+ //TODO @ Víctor Miguel Ochoa Camargo
                                     "4. Eliminar un elemento al inicio\n"+ //TODO @ Jesus Francisco Villa Icedo
-                                    "5. Eliminar un elemento al final\n"+ //TODO @ Mia Renee Valenzuela Yescaz
+                                    "5. Eliminar un elemento al final\n"+ //TODO @ Mia Renee Valenzuela Yescas
                                     "6. Eliminar un elemento\n"+ //TODO @ Jesus Francisco Villa Icedo
                                     "7. Buscar un elemento\n"+ //TODO @ Gloria Jesús Sanchez Lopez
                                     "8. Mostrar los datos de inicio a fin\n"+ //TODO @
@@ -52,7 +52,7 @@ public class Main {
                             break;
                         case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
                             break;
-                        case 5: //Eliminar al final TODO @ Mia Renee Valenzuela Yescaz
+                        case 5: //Eliminar al final TODO @ Mia Renee Valenzuela Yescas
                             break;
                         case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
                             break;
