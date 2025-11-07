@@ -32,36 +32,36 @@ public class Main {
             do {
                 try {
                     opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
-                            "1. Insertar un elemento al inicio\n"+ //TODO @
-                                    "2. Insertar un elemento al final\n"+ //TODO @
-                                    "3. Insertar un elemento en orden\n"+ //TODO @
-                                    "4. Eliminar un elemento al inicio\n"+ //TODO @
-                                    "5. Eliminar un elemento al final\n"+ //TODO @
-                                    "6. Eliminar un elemento\n"+ //TODO @
-                                    "7. Buscar un elemento\n"+ //TODO @
+                            "1. Insertar un elemento al inicio\n"+ //TODO @ Víctor Miguel Ochoa Camargo
+                                    "2. Insertar un elemento al final\n"+ //TODO @ Mia Renee Valenzuela Yescaz
+                                    "3. Insertar un elemento en orden\n"+ //TODO @ Víctor Miguel Ochoa Camargo
+                                    "4. Eliminar un elemento al inicio\n"+ //TODO @ Jesus Francisco Villa Icedo
+                                    "5. Eliminar un elemento al final\n"+ //TODO @ Mia Renee Valenzuela Yescaz
+                                    "6. Eliminar un elemento\n"+ //TODO @ Jesus Francisco Villa Icedo
+                                    "7. Buscar un elemento\n"+ //TODO @ Gloria Jesús Sanchez Lopez
                                     "8. Mostrar los datos de inicio a fin\n"+ //TODO @
-                                    "9. Mostrar los datos de fin a inicio\n"+ //TODO @
+                                    "9. Mostrar los datos de fin a inicio\n"+ //TODO @ Gloria Jesús Sanchez Lopez
                                     "10. Salir\n",
                             "Menú de opciones", 3));
                     switch (opcion) {
-                        case 1://Insertar un elemento al inicio TODO @
+                        case 1://Insertar un elemento al inicio TODO @ Víctor Miguel Ochoa Camargo
                             break;
-                        case 2://Insertar un elemento al final TODO @
+                        case 2://Insertar un elemento al final TODO @ Mia Renee Valenzuela Yescaz
                             break;
-                        case 3: //Insertar en orden TODO @
+                        case 3: //Insertar en orden TODO @ Víctor Miguel Ochoa Camargo
                             break;
-                        case 4: //Eliminar al inicio TODO @
+                        case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
                             break;
-                        case 5: //Eliminar al final TODO @
+                        case 5: //Eliminar al final TODO @ Mia Renee Valenzuela Yescaz
                             break;
-                        case 6: //Eliminar TODO @
+                        case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
                             break;
-                        case 7: //Buscar elemento TODO @
+                        case 7: //Buscar elemento TODO @ Gloria Jesús Sanchez Lopez
                             break;
                         case 8: //MostrarLista TODO @
                             lista.mostrarInicioFin();
                             break;
-                        case 9: //MostrarLista TODO @
+                        case 9: //MostrarLista TODO @ Gloria Jesús Sanchez Lopez
                             lista.mostrarFinInicio();
                             break;
                         case 10: //Salir
