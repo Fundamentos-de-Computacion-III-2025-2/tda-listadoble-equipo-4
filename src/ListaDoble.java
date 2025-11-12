@@ -7,7 +7,7 @@ public class ListaDoble {
         fin =null;
     }
 
-    //Metodo para saber si la lista doble está vacía
+    //Metodo para saber si la lista doble está vacía.
     public boolean listaVacia(){
         if(inicio==null){
             return true;
