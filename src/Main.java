@@ -67,6 +67,7 @@ public class Main {
                             } else {
                                 JOptionPane.showMessageDialog(null, "No se pudo eliminar (lista vacía)", "Error", JOptionPane.WARNING_MESSAGE);
                             }
+
                             break;
 
                         case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
