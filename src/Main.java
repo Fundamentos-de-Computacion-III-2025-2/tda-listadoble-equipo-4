@@ -47,7 +47,7 @@ public class Main {
                         case 1://Insertar un elemento al inicio TODO @ Víctor Miguel Ochoa Camargo
                             break;
                         case 2://Insertar un elemento al final  @ Mia Renee Valenzuela Yescas
-                            try {
+                           /* try {
                                 elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
                                         "Ingresa el elemento: ",
                                         "Insertar al Final: ", 3));
@@ -55,18 +55,21 @@ public class Main {
                             }catch (NumberFormatException n){
                                 JOptionPane.showInputDialog(null,"Error"+n.getMessage(),"Error de ingreso",0);
                             }
+                            */
                             break;
                         case 3: //Insertar en orden TODO @ Víctor Miguel Ochoa Camargo
                             break;
                         case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
                             break;
                         case 5: //Eliminar al final  @ Mia Renee Valenzuela Yescas
-                            elemento = lista.eliminarFinal();
+                            /*elemento = lista.eliminarFinal();
                             if (elemento != -1) {
                                 JOptionPane.showMessageDialog(null, "Se eliminó el elemento final: " + elemento, "Eliminar al final", JOptionPane.INFORMATION_MESSAGE);
                             } else {
                                 JOptionPane.showMessageDialog(null, "No se pudo eliminar (lista vacía)", "Error", JOptionPane.WARNING_MESSAGE);
                             }
+
+                             */
                             break;
 
                         case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
