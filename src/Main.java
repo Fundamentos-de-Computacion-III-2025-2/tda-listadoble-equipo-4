@@ -32,51 +32,44 @@ public class Main {
             do {
                 try {
                     opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
-                            "1. Insertar un elemento al inicio\n"+ //TODO @ Víctor Miguel Ochoa Camargo
-                                    "2. Insertar un elemento al final\n"+ // @ Mia Renee Valenzuela Yescas
-                                    "3. Insertar un elemento en orden\n"+ //TODO @ Víctor Miguel Ochoa Camargo
-                                    "4. Eliminar un elemento al inicio\n"+ //TODO @ Jesus Francisco Villa Icedo
-                                    "5. Eliminar un elemento al final\n"+ // @ Mia Renee Valenzuela Yescas
-                                    "6. Eliminar un elemento\n"+ //TODO @ Jesus Francisco Villa Icedo
-                                    "7. Buscar un elemento\n"+ //TODO @ Gloria Jesús Sanchez Lopez
-                                    "8. Mostrar los datos de inicio a fin\n"+ //TODO @
-                                    "9. Mostrar los datos de fin a inicio\n"+ //TODO @ Gloria Jesús Sanchez Lopez
+                            "1. Insertar un elemento al inicio\n"+
+                                    "2. Insertar un elemento al final\n"+
+                                    "3. Insertar un elemento en orden\n"+
+                                    "4. Eliminar un elemento al inicio\n"+
+                                    "5. Eliminar un elemento al final\n"+
+                                    "6. Eliminar un elemento\n"+
+                                    "7. Buscar un elemento\n"+
+                                    "8. Mostrar los datos de inicio a fin\n"+
+                                    "9. Mostrar los datos de fin a inicio\n"+
                                     "10. Salir\n",
                             "Menú de opciones", 3));
                     switch (opcion) {
-                        case 1://Insertar un elemento al inicio TODO @ Víctor Miguel Ochoa Camargo
+                        case 1://Insertar un elemento al inicio - Víctor Miguel Ochoa Camargo
+                            elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Ingresa el elemento: ",
+                                    "Insertar al inicio: ", 3));
+                            lista.insertarInicio(elemento);
                             break;
-                        case 2://Insertar un elemento al final  @ Mia Renee Valenzuela Yescas
-                            try {
-                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
-                                        "Ingresa el elemento: ",
-                                        "Insertar al Final: ", 3));
-                                lista.insertarFinal(elemento);
-                            }catch (NumberFormatException n){
-                                JOptionPane.showInputDialog(null,"Error"+n.getMessage(),"Error de ingreso",0);
-                            }
+                        case 2://Insertar un elemento al final - Mia Renee Valenzuela Yescaz
                             break;
-                        case 3: //Insertar en orden TODO @ Víctor Miguel Ochoa Camargo
+                        case 3: //Insertar en orden - Víctor Miguel Ochoa Camargo
+                            elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Ingresa el elemento: ",
+                                    "Insertar en orden: ", 3));
+                            lista.insertarEnOrden(elemento);
                             break;
-                        case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
+                        case 4: //Eliminar al inicio - Jesus Francisco Villa Icedo
                             break;
-                        case 5: //Eliminar al final  @ Mia Renee Valenzuela Yescas
-                            elemento = lista.eliminarFinal();
-                            if (elemento != -1) {
-                                JOptionPane.showMessageDialog(null, "Se eliminó el elemento final: " + elemento, "Eliminar al final", JOptionPane.INFORMATION_MESSAGE);
-                            } else {
-                                JOptionPane.showMessageDialog(null, "No se pudo eliminar (lista vacía)", "Error", JOptionPane.WARNING_MESSAGE);
-                            }
+                        case 5: //Eliminar al final - Mia Renee Valenzuela Yescaz
                             break;
-
-                        case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
+                        case 6: //Eliminar - Jesus Francisco Villa Icedo
                             break;
-                        case 7: //Buscar elemento TODO @ Gloria Jesús Sanchez Lopez
+                        case 7: //Buscar elemento - Gloria Jesús Sanchez Lopez
                             break;
-                        case 8: //MostrarLista TODO @
+                        case 8: //MostrarLista
                             lista.mostrarInicioFin();
                             break;
-                        case 9: //MostrarLista TODO @ Gloria Jesús Sanchez Lopez
+                        case 9: //MostrarLista - Gloria Jesús Sanchez Lopez
                             lista.mostrarFinInicio();
                             break;
                         case 10: //Salir
