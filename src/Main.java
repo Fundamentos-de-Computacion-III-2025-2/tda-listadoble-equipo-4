@@ -29,6 +29,41 @@ public class Main {
         int elemento;
         ListaDoble lista = new ListaDoble();
 
+            do {
+                try {
+                    opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
+                            "1. Insertar un elemento al inicio\n"+ //TODO @ Víctor Miguel Ochoa Camargo
+                                    "2. Insertar un elemento al final\n"+ // @ Mia Renee Valenzuela Yescas
+                                    "3. Insertar un elemento en orden\n"+ //TODO @ Víctor Miguel Ochoa Camargo
+                                    "4. Eliminar un elemento al inicio\n"+ //TODO @ Jesus Francisco Villa Icedo
+                                    "5. Eliminar un elemento al final\n"+ // @ Mia Renee Valenzuela Yescas
+                                    "6. Eliminar un elemento\n"+ //TODO @ Jesus Francisco Villa Icedo
+                                    "7. Buscar un elemento\n"+ //TODO @ Gloria Jesús Sanchez Lopez
+                                    "8. Mostrar los datos de inicio a fin\n"+ //TODO @
+                                    "9. Mostrar los datos de fin a inicio\n"+ //TODO @ Gloria Jesús Sanchez Lopez
+                                    "10. Salir\n",
+                            "Menú de opciones", 3));
+                    switch (opcion) {
+                        case 1://Insertar un elemento al inicio TODO @ Víctor Miguel Ochoa Camargo
+                            break;
+                        case 2://Insertar un elemento al final  @ Mia Renee Valenzuela Yescas
+                           try {
+                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                        "Ingresa el elemento: ",
+                                        "Insertar al Final: ", 3));
+                                lista.insertarFinal(elemento);
+                            }catch (NumberFormatException n) {
+                               JOptionPane.showInputDialog(null, "Error" + n.getMessage(), "Error de ingreso", 0);
+                           }
+                            break;
+                        case 3: //Insertar en orden TODO @ Víctor Miguel Ochoa Camargo
+                            break;
+                        case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
+                            break;
+                        case 5: //Eliminar al final  @ Mia Renee Valenzuela Yescas
+                            elemento = lista.eliminarFinal();
+                            if (elemento != -1) {
+                                JOptionPane.showMessageDialog(null, "Se eliminó el elemento final: " + elemento, "Eliminar al final", JOptionPane.INFORMATION_MESSAGE);
         do {
             try {
                 opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
