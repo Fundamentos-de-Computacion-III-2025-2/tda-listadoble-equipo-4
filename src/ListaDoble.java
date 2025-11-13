@@ -7,7 +7,7 @@ public class ListaDoble {
         fin =null;
     }
 
-    //Metodo para saber si la lista doble está vacía
+    //Metodo para saber si la lista doble está vacía.
     public boolean listaVacia(){
         if(inicio==null){
             return true;
@@ -65,8 +65,24 @@ public class ListaDoble {
 
     //Eliminar al inicio
     public int eliminarInicio(){
+        if (listaVacia()) {
+            return -1; // nada que eliminar
+        }
 
-        return -1;
+        int elemento = inicio.dato;
+
+        if (inicio == fin) {
+            //Solo hay un nodo
+            inicio = null;
+            fin = null;
+        } else {
+
+            inicio = inicio.siguiente;
+
+            inicio.anterior = null;
+        }
+        return elemento;
+
     }
 
     //Eliminar al final
@@ -90,8 +106,32 @@ public class ListaDoble {
 
     //Eliminar un elemento
     public int eliminarElemento(int elemento){
+        if (listaVacia()){
+            return -1;
+        }
+        if (inicio.dato == elemento) {
+            return eliminarInicio();
+        }
+        NodoDoble actual = inicio.siguiente;
 
-        return elemento;
+        while (actual != null) {
+
+            if (actual.dato == elemento) {
+                actual.anterior.siguiente = actual.siguiente;
+
+                if (actual.siguiente != null) {
+                    actual.siguiente.anterior = actual.anterior;
+                } else {
+                    fin = actual.anterior;
+                }
+
+                return actual.dato;
+            }
+
+            actual = actual.siguiente;
+        }
+
+        return -1;
     }
 
     //Metodo para buscar un elemento
@@ -116,5 +156,5 @@ public class ListaDoble {
 
     }
 
-
+//
 }
