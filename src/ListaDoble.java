@@ -18,13 +18,24 @@ public class ListaDoble {
 
     //Metodo para agregar un NodoDoble al Inicio de la Lista Doble
     public void insertarInicio(int dato){
-
-
+        //2,4,5
+        inicio = new NodoDoble(dato, inicio, null);
+        if (inicio.siguiente != null) {
+            inicio.siguiente.anterior = inicio;
+        }
+        if (fin == null) {
+            fin = inicio;
+        }
     }
 
     //Metodo para insertar al Final de la lista doble
     public void insertarFinal(int dato){
-
+        if (!listaVacia()){
+            fin = new NodoDoble(dato, null, fin);
+            fin.anterior.siguiente = fin;
+        } else {
+            inicio = fin = new NodoDoble(dato);
+        }
     }
 
 
@@ -34,7 +45,21 @@ public class ListaDoble {
     se inserta al final */
 
     public void insertarEnOrden(int dato){
+        //2,5,7,
+        if (listaVacia() || dato < inicio.dato) {
+            insertarInicio(dato);
+        } else if (dato > fin.dato) {
+            insertarFinal(dato);
+        } else {
+            NodoDoble actual = inicio;
+            while (actual.siguiente != null && dato > actual.siguiente.dato) {
+                actual = actual.siguiente;
+            }
+            NodoDoble nuevo = new NodoDoble(dato, actual.siguiente, actual);
+            actual.siguiente.anterior = nuevo;
+            actual.siguiente = nuevo;
 
+        }
     }
 
 
@@ -62,8 +87,21 @@ public class ListaDoble {
 
     //Eliminar al final
     public int eliminarFinal(){
+        int elemento = -1;
+        if (!listaVacia()) {
+            elemento = fin.dato;
 
-        return -1;
+            if (inicio == fin) {
+                inicio = null;
+                fin = null;
+            } else {
+                fin = fin.anterior;
+                fin.siguiente = null;
+            }
+        } else {
+            System.out.println("La lista está vacía, no se puede eliminar.");
+        }
+        return elemento;
     }
 
     //Eliminar un elemento
