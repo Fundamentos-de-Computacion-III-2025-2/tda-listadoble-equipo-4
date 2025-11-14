@@ -69,7 +69,7 @@ public class Main {
                         break;
 
                     case 6: //Eliminar @ Jesus Francisco Villa Icedo
-                        try {
+                        try {//.
                             int elementoBuscado = Integer.parseInt(JOptionPane.showInputDialog(null,
                                     "Ingresa el elemento que a eliminar:",
                                     "Eliminar Elemento Específico",
