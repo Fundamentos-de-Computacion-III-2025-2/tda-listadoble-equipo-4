@@ -18,7 +18,7 @@ public class ListaDoble {
 
     //Metodo para agregar un NodoDoble al Inicio de la Lista Doble
     public void insertarInicio(int dato){
-        //2,4,5
+        //2,4,5,7
         inicio = new NodoDoble(dato, inicio, null);
         if (inicio.siguiente != null) {
             inicio.siguiente.anterior = inicio;
@@ -40,7 +40,7 @@ public class ListaDoble {
     se inserta al final */
 
     public void insertarEnOrden(int dato){
-        //2,5,7,
+        //2,5,7,9
         if (listaVacia() || dato < inicio.dato) {
             insertarInicio(dato);
         } else if (dato > fin.dato) {

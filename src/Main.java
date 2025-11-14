@@ -10,7 +10,7 @@ public class Main {
          */
 
         /*
-        Pueden usar JOptionPane o hacer la interfaz por consola.
+        Pueden usar JOptionPane o hacer la interfaz por consola..
         Deben definir un menú con las siguientes opciones:
                 "1. Insertar un elemento al inicio\n"+
                 "2. Insertar un elemento al final\n"+
