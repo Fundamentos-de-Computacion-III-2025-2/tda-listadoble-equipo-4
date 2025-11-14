@@ -51,50 +51,13 @@ public class Main {
                     case 3: //Insertar en orden TODO @ Víctor Miguel Ochoa Camargo
                         break;
                     case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
-                        int datoEliminadoInicio = lista.eliminarInicio();
 
-                        if (datoEliminadoInicio != -1) {
-                            JOptionPane.showMessageDialog(null,
-                                    "Se eliminó el elemento del inicio: " + datoEliminadoInicio,
-                                    "Eliminar Inicio",
-                                    JOptionPane.INFORMATION_MESSAGE);
-                        } else {
-                            JOptionPane.showMessageDialog(null,
-                                    "La lista está vacía. No se puede eliminar.",
-                                    "Error al Eliminar",
-                                    JOptionPane.WARNING_MESSAGE);
-                        }
                         break;
                     case 5: //Eliminar al final  @ Mia Renee Valenzuela Yescas
                         break;
 
                     case 6: //Eliminar @ Jesus Francisco Villa Icedo
-                        try {
-                            int elementoBuscado = Integer.parseInt(JOptionPane.showInputDialog(null,
-                                    "Ingresa el elemento que a eliminar:",
-                                    "Eliminar Elemento Específico",
-                                    JOptionPane.QUESTION_MESSAGE));
 
-                            int datoEliminado = lista.eliminarElemento(elementoBuscado);
-
-                            if (datoEliminado != -1) {
-                                JOptionPane.showMessageDialog(null,
-                                        "Se ha eliminado el elemento: " + datoEliminado,
-                                        "Elemento Eliminado",
-                                        JOptionPane.INFORMATION_MESSAGE);
-                            } else {
-                                JOptionPane.showMessageDialog(null,
-                                        "El elemento " + elementoBuscado + " no se encontró en la lista.",
-                                        "Elemento No Encontrado",
-                                        JOptionPane.WARNING_MESSAGE);
-                            }
-
-                        } catch (NumberFormatException nfe) {
-                            JOptionPane.showMessageDialog(null,
-                                    "Error: Debes ingresar un número entero.",
-                                    "Error de Formato",
-                                    JOptionPane.ERROR_MESSAGE);
-                        }
                         break;
                     case 7: //Buscar elemento TODO @ Gloria Jesús Sanchez Lopez
                         break;
