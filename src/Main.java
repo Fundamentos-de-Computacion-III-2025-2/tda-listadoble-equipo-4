@@ -72,7 +72,7 @@ public class Main {
 
                         case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
                             break;
-                        case 7: //Buscar elemento TODO @ Gloria Jesús Sanchez Lopez
+                        case 7: //Buscar elemento  @ Gloria Jesús Sanchez Lopez
                             try {
                                 elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
                                         "Ingresa el elemento a buscar: ",
@@ -86,10 +86,10 @@ public class Main {
                                 JOptionPane.showMessageDialog(null,"Error"+n.getMessage(),"Error de ingreso",JOptionPane.ERROR_MESSAGE);
                             }
                             break;
-                        case 8: //MostrarLista TODO @ Gloria Jesús Sanchez Lopez
+                        case 8: //MostrarLista  @ Gloria Jesús Sanchez Lopez
                             lista.mostrarInicioFin();
                             break;
-                        case 9: //MostrarLista TODO @ Gloria Jesús Sanchez Lopez
+                        case 9: //MostrarLista  @ Gloria Jesús Sanchez Lopez
                             lista.mostrarFinInicio();
                             break;
                         case 10: //Salir
