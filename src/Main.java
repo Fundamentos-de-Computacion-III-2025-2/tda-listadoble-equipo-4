@@ -72,12 +72,24 @@ public class Main {
 
                         case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
                             break;
-                        case 7: //Buscar elemento TODO @ Gloria Jesús Sanchez Lopez
+                        case 7: //Buscar elemento  @ Gloria Jesús Sanchez Lopez
+                            try {
+                                elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                        "Ingresa el elemento a buscar: ",
+                                        "Buscar elemento: ", JOptionPane.QUESTION_MESSAGE));
+                                if(lista.buscarElemento(elemento)){
+                                    JOptionPane.showMessageDialog(null,elemento+" encontrado en la lista","Elemento encontrado",JOptionPane.INFORMATION_MESSAGE);
+                                }else{
+                                    JOptionPane.showMessageDialog(null,elemento+" No encontrado en la lista","Elemento no encontrado",JOptionPane.ERROR_MESSAGE);
+                                }
+                            }catch (NumberFormatException n){
+                                JOptionPane.showMessageDialog(null,"Error"+n.getMessage(),"Error de ingreso",JOptionPane.ERROR_MESSAGE);
+                            }
                             break;
-                        case 8: //MostrarLista TODO @
+                        case 8: //MostrarLista  @ Gloria Jesús Sanchez Lopez
                             lista.mostrarInicioFin();
                             break;
-                        case 9: //MostrarLista TODO @ Gloria Jesús Sanchez Lopez
+                        case 9: //MostrarLista  @ Gloria Jesús Sanchez Lopez
                             lista.mostrarFinInicio();
                             break;
                         case 10: //Salir
