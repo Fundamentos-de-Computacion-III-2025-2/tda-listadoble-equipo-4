@@ -136,25 +136,36 @@ public class ListaDoble {
 
     //Metodo para buscar un elemento
     public boolean buscarElemento(int elemento){
+        if(listaVacia()){
+            return false;
+        }
+        NodoDoble actual = inicio;
 
+        while (actual != null) {
+            if(actual.dato==elemento){
+                return true;
+            }
+            actual = actual.siguiente;
+        }
         return false;
 
     }
 
     //Imprimir los datos de la lista doble de inicio a fin
-    public void mostrarInicioFin(){
-        NodoDoble actual=inicio;
+    public void mostrarInicioFin() {
+        NodoDoble actual = inicio;               //En las pilas, los datos se muestran en el orden opuesto a como se insertaron.
         System.out.println();
-        while(actual!=null){
-            System.out.print(actual.dato+" --> ");
+        while (actual != null) {
+            System.out.print(actual.dato + " --> ");
             actual = actual.siguiente;
         }
     }
-
-    //Imprimir los datos de la lista doble de fin a inicio
-    public void mostrarFinInicio(){
-
+        public void mostrarFinInicio(){
+            NodoDoble actual=fin;
+            System.out.println();
+            while(actual!=null){
+                System.out.print(actual.dato+" --> ");
+                actual = actual.anterior;
+            }
     }
-
-//
 }
