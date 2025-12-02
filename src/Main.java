@@ -30,7 +30,7 @@ public class Main {
             ListaDoble lista = new ListaDoble();
 
             do {
-                try {
+                try { //a
                     opcion = Integer.parseInt(JOptionPane.showInputDialog(null,
                             "1. Insertar un elemento al inicio\n"+ //TODO @ Víctor Miguel Ochoa Camargo
                                     "2. Insertar un elemento al final\n"+ // @ Mia Renee Valenzuela Yescas
