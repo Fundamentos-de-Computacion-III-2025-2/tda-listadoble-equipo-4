@@ -45,6 +45,11 @@ public class Main {
                             "Menú de opciones", 3));
                     switch (opcion) {
                         case 1://Insertar un elemento al inicio TODO @ Víctor Miguel Ochoa Camargo
+                            //Insertar un elemento al inicio - Víctor Miguel Ochoa Camargo
+                            elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Ingresa el elemento: ",
+                                    "Insertar al inicio: ", 3));
+                            lista.insertarInicio(elemento);
                             break;
                         case 2://Insertar un elemento al final  @ Mia Renee Valenzuela Yescas
                            try {
@@ -57,6 +62,10 @@ public class Main {
                            }
                             break;
                         case 3: //Insertar en orden TODO @ Víctor Miguel Ochoa Camargo
+                            elemento = Integer.parseInt(JOptionPane.showInputDialog(null,
+                                    "Ingresa el elemento: ",
+                                    "Insertar en orden: ", 3));
+                            lista.insertarEnOrden(elemento);
                             break;
                         case 4: //Eliminar al inicio TODO @ Jesus Francisco Villa Icedo
                         int datoEliminadoInicio = lista.eliminarInicio();
@@ -80,7 +89,6 @@ public class Main {
                             } else {
                                 JOptionPane.showMessageDialog(null, "No se pudo eliminar (lista vacía)", "Error", JOptionPane.WARNING_MESSAGE);
                             }
-int hola;
                             break;
 
                         case 6: //Eliminar TODO @ Jesus Francisco Villa Icedo
